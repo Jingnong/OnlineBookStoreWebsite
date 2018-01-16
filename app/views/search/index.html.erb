@@ -1,0 +1,21 @@
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<%= form_tag(search_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search by name/description/price", size: 60 %>
+    <%= submit_tag "Search by name/description/price" %>
+<% end %>
+
+<% @products.each do |product| %>
+    <div class="entry">
+      <%= image_tag(product.image) %>
+      <h3><%= product.name %></h3>
+      <%= sanitize(product.description) %>
+      <br>
+      <div class="price_line">
+        <span class="price"><%= number_to_currency(product.price) %></span>
+        <%= button_to 'Add to Cart', lineitems_path(product_id: product), class: 'add_to_cart', remote:true %>
+      </div>
+    </div>
+<% end %>
