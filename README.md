@@ -1,7 +1,9 @@
 # README
 
 In app:
+
 username: Jingnong
+
 password: 123
 
 * Implemented an online bookstore website based on Ruby-on-Rails framework for student to trade textbooks.
