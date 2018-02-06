@@ -1,24 +1,11 @@
-# README
+# Online Book Store Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A bookstore website based on Ruby-on-Rails framework for student to trade used textbooks.
 
-Things you may want to cover:
+Developed RESTful APIs which enable CRUD operations for books and authentication for sellers. Allows shoppers to browse the books and search by attributes, add books to shopping cart, and check out.
 
-* Ruby version
+![](demopic1.jpg)
 
-* System dependencies
+![](demopic2.jpg)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![](demopic3.jpg)
